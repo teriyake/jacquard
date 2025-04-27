@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jacquard</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="mainSplitter">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="MyGL" name="mygl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>512</width>
+         <height>512</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QWidget" name="rightControlWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>450</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_rightControl">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QSplitter" name="mainVerticalSplitter">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="childrenCollapsible">
+           <bool>false</bool>
+          </property>
+          <widget class="QSplitter" name="topHorizontalSplitter">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="childrenCollapsible">
+            <bool>false</bool>
+           </property>
+           <widget class="QWidget" name="threadingContainerWidget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_threading">
+             <item>
+              <widget class="QLabel" name="threadingLabel">
+               <property name="text">
+                <string>Threading (Shafts x Warp Ends)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollAreaThreading">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="DraftGridWidget" name="threadingGrid">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>100</width>
+                  <height>100</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tieupContainerWidget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_tieup">
+             <item>
+              <widget class="QLabel" name="tieupLabel">
+               <property name="text">
+                <string>Tie-up (Shafts x Treadles)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollAreaTieup">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="DraftGridWidget" name="tieupGrid">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>100</width>
+                  <height>100</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QSplitter" name="bottomHorizontalSplitter">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="childrenCollapsible">
+            <bool>false</bool>
+           </property>
+           <widget class="QGroupBox" name="dimensionsGroup">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Loom Setup</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_groupBox">
+             <item>
+              <layout class="QFormLayout" name="formLayout">
+               <property name="sizeConstraint">
+                <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelWarpEnds">
+                 <property name="text">
+                  <string>Warp Ends:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QSpinBox" name="spinWarpEnds">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>256</number>
+                 </property>
+                 <property name="value">
+                  <number>8</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelShafts">
+                 <property name="text">
+                  <string>Shafts:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QSpinBox" name="spinShafts">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>64</number>
+                 </property>
+                 <property name="value">
+                  <number>4</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="labelTreadles">
+                 <property name="text">
+                  <string>Treadles:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QSpinBox" name="spinTreadles">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>64</number>
+                 </property>
+                 <property name="value">
+                  <number>6</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="labelWeftPicks">
+                 <property name="text">
+                  <string>Weft Picks:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QSpinBox" name="spinWeftPicks">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>256</number>
+                 </property>
+                 <property name="value">
+                  <number>8</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <!-- Button Layout is now the second item in the vertical layout -->
+              <layout class="QVBoxLayout" name="verticalLayout_Buttons">
+               <item>
+                <widget class="QPushButton" name="updateShaderButton">
+                 <property name="toolTip">
+                  <string>Apply current draft and settings to the preview</string>
+                 </property>
+                 <property name="text">
+                  <string>Update Preview</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="settingsButton">
+                 <property name="toolTip">
+                  <string>Adjust thread colors, materials, and pattern scale</string>
+                 </property>
+                 <property name="text">
+                  <string>Thread Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="envMapButton">
+                 <property name="toolTip">
+                  <string>Load a high dynamic range image for environment lighting</string>
+                 </property>
+                 <property name="text">
+                  <string>Load Env Map</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <!-- Optional: Add a spacer to push everything up if desired -->
+             <!--
+             <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+             -->
+            </layout>
+           </widget>
+           <widget class="QWidget" name="treadlingContainerWidget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_treadling">
+             <item>
+              <widget class="QLabel" name="treadlingLabel">
+               <property name="text">
+                <string>Treadling (Treadles x Weft Picks)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QScrollArea" name="scrollAreaTreadling">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="DraftGridWidget" name="treadlingGrid">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>100</width>
+                  <height>100</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1024</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <widget class="QMenu" name="menuFile">
+      <property name="title">
+       <string>File</string>
+      </property>
+      <addaction name="actionSave_Draft"/>
+      <addaction name="actionLoad_Draft"/>
+      <addaction name="separator"/>
+      <addaction name="actionQuit"/>
+     </widget>
+     <widget class="QMenu" name="menuHelp">
+      <property name="title">
+       <string>Help</string>
+      </property>
+      <addaction name="actionAbout"/>
+     </widget>
+     <addaction name="menuFile"/>
+     <addaction name="menuHelp"/>
+    </widget>
+  <action name="actionQuit">
+     <property name="text">
+      <string>Quit</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+Q</string>
+     </property>
+    </action>
+  <action name="actionSave_Draft">
+     <property name="text">
+      <string>Save Draft</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+S</string>
+     </property>
+     <property name="menuRole">
+      <enum>QAction::MenuRole::NoRole</enum>
+     </property>
+    </action>
+  <action name="actionLoad_Draft">
+     <property name="text">
+      <string>Load Draft</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+O</string>
+     </property>
+     <property name="menuRole">
+      <enum>QAction::MenuRole::NoRole</enum>
+     </property>
+    </action>
+  <action name="actionAbout">
+     <property name="text">
+      <string>About</string>
+     </property>
+    </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyGL</class>
+   <extends>QOpenGLWidget</extends>
+   <header>mygl.h</header>
+   <slots>
+    <slot>slot_loadEnvMap()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>DraftGridWidget</class>
+   <extends>QWidget</extends>
+   <header>draftgridwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

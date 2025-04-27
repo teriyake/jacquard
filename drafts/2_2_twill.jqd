@@ -1,0 +1,119 @@
+{
+    "dimensions": {
+        "shafts": 4,
+        "treadles": 4,
+        "warpEnds": 8,
+        "weftPicks": 8
+    },
+    "threading": [
+        [
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        [
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        [
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true
+        ]
+    ],
+    "tieup": [
+        [
+            true,
+            false,
+            false,
+            true
+        ],
+        [
+            true,
+            true,
+            false,
+            false
+        ],
+        [
+            false,
+            true,
+            true,
+            false
+        ],
+        [
+            false,
+            false,
+            true,
+            true
+        ]
+    ],
+    "treadling": [
+        [
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        [
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        [
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true
+        ]
+    ],
+    "version": 1
+}

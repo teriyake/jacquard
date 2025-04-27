@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/Users/teriyake/Documents/projects/jacquard/build/Jacquard_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/teriyake/Documents/projects/jacquard/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/teriyake/Documents/projects/jacquard/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/teriyake/Documents/projects/jacquard",
+	"CMAKE_SOURCE_DIR" : "/Users/teriyake/Documents/projects/jacquard",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/Users/teriyake/Documents/projects/jacquard/build/Jacquard_autogen/include",
+	"INPUTS" : [ "/Users/teriyake/Documents/projects/jacquard/textures/brdfLUT.png" ],
+	"LOCK_FILE" : "/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/Jacquard_autogen.dir/AutoRcc_textures_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "textures" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_textures.cpp",
+	"RCC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/Jacquard_autogen.dir/AutoRcc_textures_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "/Users/teriyake/Documents/projects/jacquard/resources/textures.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

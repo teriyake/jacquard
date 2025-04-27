@@ -1,0 +1,5 @@
+/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/Jacquard.dir
+/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/edit_cache.dir
+/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/rebuild_cache.dir
+/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/Jacquard_autogen_timestamp_deps.dir
+/Users/teriyake/Documents/projects/jacquard/build/CMakeFiles/Jacquard_autogen.dir

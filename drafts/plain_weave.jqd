@@ -1,0 +1,63 @@
+{
+    "dimensions": {
+        "shafts": 2,
+        "treadles": 2,
+        "warpEnds": 8,
+        "weftPicks": 8
+    },
+    "threading": [
+        [
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        [
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true
+        ]
+    ],
+    "tieup": [
+        [
+            true,
+            false
+        ],
+        [
+            false,
+            true
+        ]
+    ],
+    "treadling": [
+        [
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        [
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true
+        ]
+    ],
+    "version": 1
+}

@@ -1,0 +1,29 @@
+{
+    "dimensions": {
+        "warpEnds": 16,
+        "shafts": 4,
+        "treadles": 6,
+        "weftPicks": 16
+    },
+    "threading": [
+        [true, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false],
+        [false, false, true, false, false, false, true, false, false, false, true, false, false, false, true, false],
+        [false, true, false, true, false, true, false, true, false, false, false, false, false, false, false, false],
+        [false, false, false, false, false, false, false, false, false, true, false, true, false, true, false, true]
+    ],
+    "tieup": [
+        [true, false, true, false, false, true],
+        [false, true, true, true, false, false],
+        [true, false, false, true, true, false],
+        [false, true, false, false, true, true]
+    ],
+    "treadling": [
+        [true, false, false, false, true, false, false, false, true, false, false, false, true, false, false, false],
+        [false, false, true, false, false, false, true, false, false, false, true, false, false, false, true, false],
+        [false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true],
+        [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+        [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+        [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    ],
+    "version": 1
+}

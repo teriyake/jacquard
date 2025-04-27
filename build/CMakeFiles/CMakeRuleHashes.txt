@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+7389f160e8741eb639849871f7189767 CMakeFiles/Jacquard_autogen
+e6f076d05a6eb9add6badae5072c9aac Jacquard_autogen/3YJK5W5UP7/qrc_glsl.cpp
+46fcee23515566295cbc852f2de40185 Jacquard_autogen/3YJK5W5UP7/qrc_textures.cpp
+15808d1d59751e55c132111e91c81188 Jacquard_autogen/timestamp
